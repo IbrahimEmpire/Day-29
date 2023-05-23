@@ -17,7 +17,7 @@ export const Adduser = () => {
     <Home>
         
         <div className='user-put'>
-        <h1 className='add-lable'>ADD STUDENT DETAIL</h1>
+        <h1 className='add-lable'>ADD TEACHER DETAIL</h1>
         <TextField size='small' id="outlined-basic" label="Profile Image" variant="outlined" onChange={(e)=> setPic(e.target.value)}/><br></br>
         <TextField size='small' id="outlined-basic" label="Name" variant="outlined"onChange={(e)=> setName(e.target.value)} /><br></br>
         <TextField size='small' id="outlined-basic" label="Id" variant="outlined" onChange={(e)=> setId(e.target.value)} /><br></br>
