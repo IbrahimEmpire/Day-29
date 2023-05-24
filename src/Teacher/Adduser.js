@@ -36,7 +36,7 @@ export const Adduser = () => {
                 email:email,
                 location:location
             }
-            fetch(`https://63ddb97d367aa5a7a4135ba7.mockapi.io/user`,{
+            fetch(`https://63ddb97d367aa5a7a4135ba7.mockapi.io/books`,{
                 method:"POST",
                 body: JSON.stringify(newUser),
                 headers:{"Content-Type": "application/json"}

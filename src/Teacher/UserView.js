@@ -11,7 +11,7 @@ export const UserView = () => {
     const {id} = useParams()
     const navigate = useNavigate()
     useEffect(()=>{
-       fetch(`https://63ddb97d367aa5a7a4135ba7.mockapi.io/user/${id}`, {method:"GET"})
+       fetch(`https://63ddb97d367aa5a7a4135ba7.mockapi.io/books/${id}`, {method:"GET"})
        .then((res)=> res.json())
        .then((res)=> setUser(res))
     },[])

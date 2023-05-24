@@ -10,7 +10,7 @@ const [user, setUser] = useState(null)
 const {id} = useParams()
 
 useEffect(()=>{
-fetch(`${student}/${id}`,{method:"GET"})
+fetch(`https://63ddb97d367aa5a7a4135ba7.mockapi.io/books/${id}`,{method:"GET"})
 .then((res)=> res.json())
 .then((res)=> setUser(res))
 },[])
@@ -54,7 +54,7 @@ onChange={(e)=>setPic(e.target.value)} /><br></br>
             <TextField id="outlined-basic" label="Location" variant="outlined" value={location}
               onChange={(e)=>setLocation(e.target.value)}/><br></br>
             <Button  variant="outlined"  size="large"
-            onClick={()=>{navigate("/user")
+            onClick={()=>{
              const updateUser = {
                 pic:pic,
                 name:name,
@@ -64,7 +64,7 @@ onChange={(e)=>setPic(e.target.value)} /><br></br>
                 email:email,
                 location:location
              }
-             fetch(`https://63ddb97d367aa5a7a4135ba7.mockapi.io/user/${user.id}`,{method: "PUT",
+             fetch(`https://63ddb97d367aa5a7a4135ba7.mockapi.io/books/${user.id}`,{method: "PUT",
      body: JSON.stringify(updateUser),
      headers:{"Content-Type": "application/json"}
   })

@@ -42,7 +42,7 @@ export const Addstudent = () => {
             }, 
             )
             .then((res)=> res.json())
-            .then(()=> navigate("/user"))
+            .then(()=> navigate("/student"))
         }}
 
         >Add User</Button><br></br>

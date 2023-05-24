@@ -15,7 +15,7 @@ export function User() {
  
 const navigate = useNavigate()
   const getUser= ()=>{
-    fetch(`https://63ddb97d367aa5a7a4135ba7.mockapi.io/user`,{method:"GET"})
+    fetch(`https://63ddb97d367aa5a7a4135ba7.mockapi.io/books`,{method:"GET"})
     .then((res)=>res.json())
     .then((res)=> setUser(res))
   }
@@ -24,7 +24,7 @@ const navigate = useNavigate()
     },[])
 
   const deleteUser =(id)=>{
-    fetch(`https://63ddb97d367aa5a7a4135ba7.mockapi.io/user/${id}`, {method:"DELETE"})
+    fetch(`https://63ddb97d367aa5a7a4135ba7.mockapi.io/books/${id}`, {method:"DELETE"})
     .then(()=> getUser())
   }
 

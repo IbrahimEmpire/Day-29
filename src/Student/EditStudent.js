@@ -5,7 +5,7 @@ import { useNavigate, useParams } from 'react-router-dom'
 import { Home } from '../Home'
 
 
-export const EditUser = () => {
+export const Editstudent = () => {
 const [user, setUser] = useState(null)
 const {id} = useParams()
 
